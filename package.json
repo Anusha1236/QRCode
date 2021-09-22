@@ -1,0 +1,27 @@
+{
+  "name": "nodeqrcode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Anusha1236"
+  },
+  "keywords": [
+    "qrcode",
+    "node"
+  ],
+  "author": "Anusha",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.12",
+    "qrcode": "^1.4.4"
+  }
+}
