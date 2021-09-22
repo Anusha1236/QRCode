@@ -12,14 +12,14 @@ app.get('/',(req,res)=>{
     res.render("index");
 })
 
-app.post('/scan',(req,res)=>{
+app.post('/scanQRCode',(req,res)=>{
     const url  = req.body.url;
     console.log(req.body.url);
-    if(url.length == 0) res.send("url is empty");
+    if(url.length == 0) res.send("please enter some url");
     QRcode.toDataURL(url,(err,data)=>{
         if(err) res.send("error occured");
         console.log(data);
-        res.render("scan",{data})
+        res.render("QRScan",{data})
     })
 })
 
